@@ -31,3 +31,10 @@
   - [x] Ajout des roles et users dans le commandlinerunner dans le fichier JpaSprindDataManyToManyApplication.
 
 ---
+
+
+### Etape 3: Simulation d'une authentification
+* **Taches:**
+  - [x] Ajouter une méthode authenticate dans l'interface et l'implémenter puis essayer d'afficher les informations d'un utilisateur dans la console.
+
+---

@@ -10,4 +10,5 @@ public interface UserService {
     Role findRoleByRoleName(String roleName);
     // pour ca on doit avoir un unique username et unique role , on definit ca dans le mapping dans les entite
     void addRoleToUser(String username, String roleName);
+    User authenticate(String userName, String password);
 }
