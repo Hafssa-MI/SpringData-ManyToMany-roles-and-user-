@@ -23,3 +23,11 @@
     - [x] Création de la couche métier, le package service avec une interface et son implementation.
 
 ---
+
+
+### Etape 2: Connexion avec h2 database
+* **Taches:**
+  - [x] Configuration du fichier application.properties.
+  - [x] Ajout des roles et users dans le commandlinerunner dans le fichier JpaSprindDataManyToManyApplication.
+
+---

@@ -20,7 +20,6 @@ public class UserServiceImpl implements UserService{
     @Override
     public User addNewUser(User user){
         user.setUserId(UUID.randomUUID().toString());
-
         return userRepository.save(user);
     };
     public Role addNewRole(Role role){
@@ -38,6 +37,7 @@ public class UserServiceImpl implements UserService{
         Role role = findRoleByRoleName(roleName);
         if(user.getRoles()!=null){
             user.getRoles().add(role);
+            role.getUsers().add(user);
         }
     }
 }
