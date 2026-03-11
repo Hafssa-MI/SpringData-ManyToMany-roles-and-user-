@@ -1,5 +1,6 @@
 package net.hafssa.jpa_springdata_manytomany.entities;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,5 +23,7 @@ public class Role {
     // si on choisit pas le nom de la table il va choisir par defait comme celle ci , on spécifie aussi les noms des cles etrangers
     //@JoinTable(name="USERS_ROLES",)
     @ToString.Exclude // pour ne pas entrer dans une boucle infifni lore de laffichage
+    //pour  mysql
+    @JsonProperty (access = JsonProperty.Access.WRITE_ONLY)
     private List<User> users=new ArrayList<>();
 }

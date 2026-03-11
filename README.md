@@ -38,3 +38,10 @@
   - [x] Ajouter une méthode authenticate dans l'interface et l'implémenter puis essayer d'afficher les informations d'un utilisateur dans la console.
 
 ---
+
+
+### Etape 4: Test en affichant les donnees d'un utilisateur
+* **Taches:**
+  - [x] Ajouter un package web pour la partie vue et essayer de faire un mapping dans le UserController.
+
+---
